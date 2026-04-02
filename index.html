@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>ONE FIRE - Flames</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div id="loader"><h1>🔥 ONE FIRE 🔥</h1></div>
+
+<canvas id="particles"></canvas>
+
+<video autoplay muted loop class="bg-video">
+  <source src="videos/videon.mp4" type="video/mp4">
+</video>
+
+<header class="header">
+  <img src="img/logo.png" alt="Flames Logo" class="logo">
+</header>
+
+<section class="hero">
+  <h1 class="hero-title"></h1>
+  <p class="hero-sub">Chegou o tempo de viver algo novo com Deus.</p>
+  <div id="countdown"></div>
+  <a href="#video-section" class="btn">Ver mais</a>
+</section>
+
+<section class="gallery fade-in">
+  <div class="gallery-container">
+    <div class="card"><img src="img/faz.jpg" alt="Faz"></div>
+    <div class="card"><img src="img/ovelha.jpg" alt="Ovelha"></div>
+    <div class="card"><img src="img/segue.jpg" alt="Segue"></div>
+  </div>
+</section>
+
+<section id="video-section" class="video-text-section fade-in">
+  <div class="video-text-container glass">
+    <div class="video-box">
+      <video controls>
+        <source src="videos/project.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="text-box">
+      <h2>ONE FIRE 🔥</h2>
+      <p>Chegou o tempo de sair da terra seca e viver algo novo com Deus. Um encontro que vai marcar sua vida e reacender o fogo dentro de você.</p>
+      <p>Não é só um evento… é uma experiência.</p>
+      <h3>📅 04/04/2026</h3>
+      <p>📍 Vespasiano - MG</p>
+    </div>
+  </div>
+</section>
+
+<section class="instagram-interactive">
+  <div class="insta-container">
+    <div class="insta-glass-wrapper">
+      <div class="insta-left">
+        <img src="img/tagr.jpg" alt="Imagem Flames">
+      </div>
+      <div class="insta-right">
+        <div class="card-block">
+          <div class="insta-card" id="instaCard">
+            <a href="https://www.instagram.com/redeflames/" target="_blank">F L A M E S </a>
+            <p>Siga nosso perfil para ficar por dentro de todas as programações e eventos do grupo Flames. Esteja sempre conectado e atualizado!</p>
+            <canvas id="instaParticles"></canvas>
+          </div>
+          <div class="location-card">
+            <h2>L O C A L I Z A Ç Ã O</h2>
+            <p>CRAZY FOR JESUS</p>
+            <p>Igreja Quadrangular - Morro Alto</p>
+            <div class="map-container">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3755.945893456385!2d-43.9298284!3d-19.714932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa68e217f26154b%3A0x643190f845d45d94!2sVespasiano%20-%20MG!5e0!3m2!1spt-BR!2sbr!4v1712080000000"
+                allowfullscreen=""
+                loading="lazy">
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer fade-in">
+  <div class="footer-container">
+    <div class="footer-box">
+      <h2>FLAMES 🔥</h2>
+      <p>Uma geração incendiada por Cristo.</p>
+    </div>
+    <div class="footer-box">
+      <h3>ONE FIRE</h3>
+      <p>📅 04/04/2026</p>
+      <p>📍 Igreja do Evangelho Quadrangular Morro Alto - Vespasiano - MG</p>
+    </div>
+    <div class="footer-box">
+      <h3>Conecte-se</h3>
+      <p>Instagram: @redeflames</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 RedeFlames. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

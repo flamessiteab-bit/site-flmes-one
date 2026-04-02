@@ -1,0 +1,482 @@
+/* RESET 🔥 */
+/* ========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  color: white;
+  background: black;
+  opacity: 0; /* usado para loader */
+  transition: opacity 0.6s ease;
+  overflow-x: hidden;
+}
+
+/* ========================= */
+/* FONTE TITULOS 🔥 */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;600&display=swap');
+
+h1, h2, h3 {
+  font-family: 'Anton', sans-serif;
+}
+
+/* ========================= */
+/* LOADER 🔥 */
+#loader {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.5s ease;
+}
+
+#loader h1 {
+  font-size: 50px;
+  color: #ff4d4d;
+  text-shadow: 0 0 20px #ff4d4d;
+}
+
+/* ========================= */
+/* PARTICLES 🔥 */
+#particles {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* ========================= */
+/* VIDEO FUNDO 🔥 */
+.bg-video {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  z-index: -2;
+  filter: brightness(0.4) contrast(1.2);
+  transition: transform 0.3s ease;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+  z-index: -1;
+}
+
+/* ========================= */
+/* HEADER 🔥 */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background: rgba(0,0,0,0.85);
+  transition: all 0.3s ease;
+}
+
+.logo {
+  width: 120px;
+}
+
+/* ========================= */
+/* HERO 🔥 */
+.hero {
+  text-align: center;
+  padding: 120px 20px 80px;
+  position: relative;
+  z-index: 5;
+}
+
+.hero-title {
+  font-size: 60px;
+  color: #cc0a0a;
+  margin-bottom: 20px;
+  text-shadow: 0 0 20px #000000;
+}
+
+.hero-sub {
+  font-size: 22px;
+  margin-bottom: 30px;
+  color: #ddd;
+}
+
+#countdown {
+  font-size: 28px;
+  margin-bottom: 40px;
+  color: #ff6b6b;
+}
+
+/* BOTÃO HERO */
+.btn {
+  padding: 15px 40px;
+  background: #d20000;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 30px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #d70000;
+  transform: scale(1.05);
+  letter-spacing: 2px;
+}
+
+/* ========================= */
+/* GALERIA 🔥 */
+.gallery {
+  padding: 60px 20px;
+}
+
+.gallery-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.card {
+  flex: 1;
+  border-radius: 20px;
+  overflow: hidden;
+  background: black;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+  transition: transform 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* ========================= */
+/* VIDEO + TEXTO 🔥 */
+.video-text-section {
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.video-text-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-width: 1100px;
+  width: 100%;
+}
+
+.video-box {
+  flex: 1;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+  transition: transform 0.3s ease;
+}
+
+.video-box:hover {
+  transform: scale(1.03);
+}
+
+.video-box video {
+  width: 100%;
+  display: block;
+}
+
+.text-box {
+  flex: 1;
+}
+
+.text-box h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.text-box p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+.text-box h3 {
+  margin-top: 20px;
+  color: #ff4d4d;
+}
+
+/* ========================= */
+/* INSTAGRAM INTERATIVO 🔥 */
+.insta-glass-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+}
+
+.insta-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.insta-left img {
+  max-width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.insta-right {
+  flex: 1.2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+/* Mantendo CSS antigo para interação Instagram */
+.insta-card {
+  position: relative;
+  display: inline-block;
+  padding: 20px 50px;
+  border-radius: 25px;
+  background: #1a1a1a;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.insta-card a {
+  font-family: 'Anton', sans-serif;
+  font-size: 28px;
+  color: #b41616;
+  text-decoration: none;
+  position: relative;
+  z-index: 2;
+}
+
+.insta-card p {
+  color: #fff;
+  font-size: 0.9rem;
+  margin-top: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+#instaParticles {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Localização dentro da mesma caixa */
+.location-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 20px 30px;
+  text-align: left;
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.location-card h2 {
+  font-family: 'Anton', sans-serif;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.location-card p {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.location-card a {
+  font-size: 0.9rem;
+  color: #b41616;
+  text-decoration: none;
+}
+
+.location-card .map-container iframe {
+  width: 100%;
+  height: 200px;
+  border: none;
+  border-radius: 15px;
+  margin-top: 10px;
+}
+
+/* ========================= */
+/* ANIMAÇÕES 🔥 */
+@keyframes glow {
+  0% { text-shadow: 0 0 20px #ff4d4d, 0 0 40px #ff6b6b, 0 0 60px #ff4d4d; }
+  50% { text-shadow: 0 0 30px #ff4d4d, 0 0 60px #ff6b6b, 0 0 90px #ff4d4d; }
+  100% { text-shadow: 0 0 20px #ff4d4d, 0 0 40px #ff6b6b, 0 0 60px #ff4d4d; }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* ========================= */
+/* LOCALIZAÇÃO SEPARADA 🔥 */
+.location {
+  padding: 60px 20px;
+  text-align: center;
+  position: relative;
+  z-index: 5;
+}
+
+.map-container {
+  width: 90%;
+  max-width: 900px;
+  margin: 30px auto;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+  transition: transform 0.3s ease;
+}
+
+.map-container:hover {
+  transform: scale(1.02);
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 400px;
+  border: 0;
+}
+
+/* ========================= */
+/* FOOTER 🔥 */
+.footer {
+  background: rgb(196, 4, 4);
+  padding: 60px 20px 20px;
+  margin-top: 60px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: auto;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.footer-box {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-box h2, .footer-box h3 {
+  margin-bottom: 15px;
+}
+
+.footer-box p {
+  color: #ccc;
+  margin-bottom: 8px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  border-top: 1px solid #ffffff;
+  padding-top: 20px;
+}
+
+.footer-bottom p {
+  color: #ededed;
+  font-size: 14px;
+}
+
+/* ========================= */
+/* FADE-IN SCROLL 🔥 */
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ========================= */
+/* RESPONSIVO 🔥 */
+@media (max-width: 900px) {
+  .gallery-container, .video-text-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .card img {
+    height: 250px;
+  }
+
+  .text-box h2 {
+    font-size: 30px;
+  }
+
+  #countdown {
+    font-size: 24px;
+  }
+
+  .insta-glass-wrapper {
+    flex-direction: column;
+  }
+
+  .insta-left {
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .insta-right {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo { width: 80px; }
+  .map-container iframe { height: 250px; }
+  .hero-title { font-size: 40px; }
+  .btn { font-size: 16px; padding: 12px 30px; }
+}
